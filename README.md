@@ -1,16 +1,53 @@
-# React + Vite
+## Стек и версии
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Проект разработан с использованием следующих технологий:
 
-Currently, two official plugins are available:
+*   **React** (v19.2.8) — библиотека для построения пользовательских интерфейсов.
+*   **React DOM** (v19.2.8) — пакет для работы React с DOM в браузере.
+*   **Vite** (v8.3.0) — сборщик проекта и dev-сервер.
+*   **JavaScript (ES6+)** — язык программирования.
+*   **CSS3** — стилизация компонентов (без использования сторонних UI-библиотек).
+*   **ESLint** (v10.10.0) — линтер для проверки качества кода.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Запуск. Для запуска проекта на локальном компьютере должны быть установлены **Node.js** и **npm**.
 
-## React Compiler
+1.  **Клонируйте репозиторий:**
+    ```bash
+    git clone git@github.com:kqkquuu-wq/lektors_finder.git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. **Перейдите в папку с проектом:**
+    ```bash
+    cd search_lektor
 
-## Expanding the ESLint configuration
+3. **Установите зависимости:**
+    ```bash
+    npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. **Запустите проект в режиме разработки:**
+    ```bash
+    npm run dev
+**После этого проект будет доступен по адресу, который появится в терминале**
+
+## Структура
+
+├── public/              # Статические файлы
+├── src/                 # Исходный код
+│   ├── components/      # Переиспользуемые компоненты (Navbar)
+│   ├── images/          # Фотографии лекторов и логотипы партнеров
+│   ├── pages/           # Страницы приложения (Home, About, Auth, Lektors, L1-L6)
+│   ├── styles/          # Глобальные стили (style.css)
+│   ├── App.jsx          # Корневой компонент с логикой навигации
+│   ├── main.jsx         # Точка входа в React-приложение
+│   └── index.css        # Базовые стили
+├── .gitignore           # Исключения для Git
+├── package.json         # Зависимости и скрипты
+├── vite.config.js       # Конфигурация Vite
+└── README.md            # Документация
+
+## Данные
+
+**Данные лекторов хранятся непосредственно в файлах страниц в виде статических JSX-компонентов (src/pages/l1.jsx — l6.jsx).**
+
+**Список лекторов для каталога находится в файле src/pages/lektors.jsx.**
+
+**Изображения импортируются из папки src/images/.**
