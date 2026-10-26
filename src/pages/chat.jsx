@@ -5,7 +5,7 @@ const Message = () => {
     return (
         <div className="card text-card">
             <p className="cardtext">
-                Чат с лектором
+                пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             </p>
         </div>
     );
