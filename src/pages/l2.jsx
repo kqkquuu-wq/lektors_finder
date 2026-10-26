@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import '../styles/style.css';
 import p2 from '../images/p2.png';
+import PortalTooltip from '../components/PortalTooltip';
 
 const L2 = ({ onNavigate }) => {
     return (
@@ -25,7 +26,16 @@ const L2 = ({ onNavigate }) => {
 
                     <div className="lektor-detail-block">
                         <h3>Опыт</h3>
-                        <p>Стаж: 14 лет. Учёная степень: доктор биологических наук.</p>
+                        <p>Стаж:{' '}
+                            <PortalTooltip content="Общий стаж преподавания в годах">
+                                <span>14 лет</span>
+                            </PortalTooltip>
+                            .Учёная степень:{' '}
+                            <PortalTooltip content="Учёная степень, присуждённая ВАК">
+                                <span>доктор биологических наук</span>
+                            </PortalTooltip> 
+                            .
+                        </p>
                     </div>
 
                     <div className="lektor-detail-block">

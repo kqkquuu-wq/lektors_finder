@@ -5,7 +5,7 @@ const Feed = () => {
     return (
         <div className="card text-card">
             <p className="cardtext">
-                Отзывы
+                пїЅпїЅпїЅпїЅпїЅпїЅ
             </p>
         </div>
     );
