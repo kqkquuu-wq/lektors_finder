@@ -1,6 +1,6 @@
 import { useState, useRef, useLayoutEffect, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import './PortalTooltip.css';
+import './PortalTooltip';
 
 export default function PortalTooltip({ children, content }) {
   const [visible, setVisible] = useState(false);
